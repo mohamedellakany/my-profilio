@@ -91,11 +91,12 @@ section { padding: 72px 0 0; }
 .about-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 40px; align-items: start; }
 .about-grid p { font-size: 17px; line-height: 1.75; color: var(--text); }
 .about-grid p + p { margin-top: 14px; }
+.about-grid p.about-note { font: 13px/1.7 var(--mono); color: var(--cmt); margin-top: 22px; padding-top: 14px; border-top: 1px dashed var(--border); }
 .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .stat { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 18px 20px; }
 .stat b { display: block; font: 700 32px var(--mono); color: var(--heading); letter-spacing: -.02em; }
 .stat span { font: 12px var(--mono); color: var(--muted); }
-.stat b .unit { color: var(--green); }
+.stat b .unit { font: inherit; color: var(--green); }
 
 /* ===== Projects ===== */
 .projects { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
