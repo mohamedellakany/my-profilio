@@ -1,11 +1,12 @@
-# Mohamed Ellakany — Portfolio
+# Mohamed Ellakany · Personal website
 
-A responsive, single-page portfolio built with plain HTML, CSS, and JavaScript. It includes a downloadable résumé, a saved light/dark theme, smooth section navigation, and reduced-motion support.
+A responsive, single-page portfolio in a "Python terminal" style, written in plain HTML, CSS and JavaScript. No build step.
 
-## Preview locally
+- `index.html`: all content (hero code window, about, selected work, experience as `git log`, skills, education, contact)
+- `styles.css`: design and light/dark themes
+- `script.js`: theme toggle (follows system setting, remembers the visitor's choice) and mobile menu
+- `assets/Mohamed_Ellakany_Resume_2026.docx`: the downloadable resume; replace it when the resume changes
 
-Open `index.html` in a browser, or serve this folder with any static file server.
+Preview by opening `index.html` in a browser. Deploy as static files (GitHub Pages, Netlify or Vercel).
 
-## Deploy
-
-This site has no build step. It can be deployed as static files to Vercel, Netlify, or another static host. For Vercel, install and sign in to the Vercel CLI, then run `vercel --prod` from this folder. Connect the resulting project to a custom domain from the Vercel dashboard or CLI.
+Pushing to `main` deploys automatically through the GitHub Actions workflow in `.github/workflows/deploy.yml`.

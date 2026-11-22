@@ -3,87 +3,383 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f5f3ee">
-  <meta name="description" content="Mohamed Ellakany is a solutions architect and senior backend engineer building resilient cloud platforms, APIs, and data systems.">
-  <title>Mohamed Ellakany — Solutions Architect</title>
+  <title>Mohamed Ellakany · Senior Python Engineer</title>
+  <meta name="description" content="Mohamed Ellakany is a Senior Python Engineer with 13+ years building scalable, cloud-native backend platforms, APIs, and data systems across automotive, banking, healthcare, telecom, and education.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mohamed Ellakany · Senior Python Engineer">
+  <meta property="og:description" content="13+ years building scalable Python platforms with Django, FastAPI, AWS, Azure, GCP, and Kubernetes.">
+  <meta name="twitter:card" content="summary">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <script>document.documentElement.dataset.theme=localStorage.getItem('theme')||'light';</script>
+  <script>document.documentElement.dataset.theme = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');</script>
 </head>
 <body>
   <header class="site-header">
-    <a class="wordmark" href="#home" aria-label="Mohamed Ellakany home"><span class="mark">ME</span><span>Mohamed Ellakany</span></a>
-    <nav aria-label="Main navigation"><a href="#about">About</a><a href="#work">Experience</a><a href="#expertise">Expertise</a><a href="#contact">Contact</a></nav>
-    <div class="header-actions"><button class="theme-toggle" aria-label="Switch to dark theme" title="Toggle color theme"><svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg></button><a class="header-cta" href="#contact">Let’s talk <span>↗</span></a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button></div>
+    <div class="wrap header-inner">
+      <a class="logo" href="#top" aria-label="Mohamed Ellakany, back to top">mohamed<span>.py</span></a>
+      <nav aria-label="Main navigation"><a href="#about">about</a><a href="#work">work</a><a href="#experience">experience</a><a href="#skills">skills</a><a href="#contact">contact</a></nav>
+      <div class="header-actions">
+        <a class="btn sm" href="assets/Mohamed_Ellakany_Resume_2026.docx" download>resume ↓</a>
+        <button class="icon-btn theme-toggle" type="button" aria-label="Switch theme" title="Toggle color theme">
+          <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+          <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z"/></svg>
+        </button>
+        <button class="icon-btn menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
   </header>
-  <div class="companies-bar" aria-label="Organizations from my experience">
-    <span class="companies-label">EXPERIENCE ACROSS</span>
-    <div class="companies-list"><span>Softworld</span><span>Santander</span><span>Insight Global</span><span>T-Mobile</span><span>Accenture</span><span>Bright Horizons</span><span>Experis</span><span>Verizon</span><span>Molina Healthcare</span><span>Banque Misr</span><span>Vodafone Egypt</span></div>
-  </div>
-  <main id="home">
-    <section class="hero section-wrap">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot"></span> AVAILABLE FOR SELECT OPPORTUNITIES</p>
-        <h1>Building systems<br>that <em>scale with purpose.</em></h1>
-        <p class="hero-intro">I’m Mohamed — a solutions architect and senior backend engineer designing dependable cloud platforms, data systems, and products for complex industries.</p>
-        <div class="hero-actions"><a class="button button-dark" href="#work">Explore my work <span>↘</span></a><a class="text-link" href="assets/Mohamed-Ellakany-Resume.docx" download>Download résumé <span>↓</span></a></div>
-        <div class="hero-meta"><span>ANAHEIM, CALIFORNIA</span><span>13+ YEARS BUILDING</span></div>
+
+  <main id="top" class="wrap">
+    <!-- HERO -->
+    <section class="hero">
+      <div>
+        <div class="hello">&gt;&gt;&gt; print("Hello, I'm")<span class="caret" aria-hidden="true"></span></div>
+        <h1>Mohamed Ellakany,<br><span class="py">Senior Python Engineer.</span></h1>
+        <p class="sub">I build scalable, cloud-native backend systems in Python (Django and FastAPI platforms, data pipelines, and APIs) for automotive, banking, healthcare, telecom, and education. 13+ years of experience.</p>
+        <div class="btns">
+          <a class="btn primary" href="assets/Mohamed_Ellakany_Resume_2026.docx" download>$ download resume</a>
+          <a class="btn" href="#contact">$ contact --email</a>
+        </div>
+        <div class="status">open to remote Senior Python Engineer roles</div>
       </div>
-      <div class="hero-art" aria-label="Illustration of connected architectural systems" role="img">
-        <div class="art-top"><span>ARCHITECTURE / 001</span><span>IN THE MAKING <i></i></span></div>
-        <svg class="system-art" viewBox="0 0 600 500" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <defs><linearGradient id="panel" x1="80" y1="70" x2="500" y2="420" gradientUnits="userSpaceOnUse"><stop stop-color="#274B68"/><stop offset="1" stop-color="#142B40"/></linearGradient><linearGradient id="glow" x1="170" y1="90" x2="420" y2="410" gradientUnits="userSpaceOnUse"><stop stop-color="#C5F276"/><stop offset="1" stop-color="#75B7A3"/></linearGradient></defs>
-          <path class="orbit orbit-a" d="M300 62c113 0 205 82 205 183s-92 183-205 183S95 346 95 245 187 62 300 62Z"/><path class="orbit orbit-b" d="M300 25c144 0 260 98 260 220S444 465 300 465 40 367 40 245 156 25 300 25Z"/>
-          <path class="wire" d="M114 181 244 220m86-4 130-76M329 269l111 105M245 269 145 354M262 167l-7-64m77 228 8 59"/>
-          <rect x="186" y="170" width="228" height="158" rx="17" fill="url(#panel)" stroke="#7B9BA8" stroke-opacity=".4"/>
-          <rect x="205" y="190" width="190" height="118" rx="10" fill="#102639" stroke="#6C8995" stroke-opacity=".32"/>
-          <path d="M230 279h141" stroke="#78919A" stroke-opacity=".5"/><path d="M230 261h82" stroke="#78919A" stroke-opacity=".45"/>
-          <path d="M230 243h111" stroke="#78919A" stroke-opacity=".45"/>
-          <rect x="230" y="211" width="8" height="23" rx="4" fill="#C4F174"/><rect x="245" y="202" width="8" height="32" rx="4" fill="#C4F174" opacity=".7"/><rect x="260" y="216" width="8" height="18" rx="4" fill="#C4F174" opacity=".48"/><path d="m328 224 10 10 21-23" stroke="#C5F276" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-          <circle cx="114" cy="181" r="21" fill="#193A50" stroke="#8EA8A9"/><path d="M106 181h16m-8-8v16" stroke="#C5F276" stroke-width="2"/>
-          <circle cx="460" cy="140" r="25" fill="#193A50" stroke="#8EA8A9"/><path d="M451 144h18m-13-8h8m-4 0v16" stroke="#C5F276" stroke-width="2"/>
-          <circle cx="440" cy="374" r="22" fill="#193A50" stroke="#8EA8A9"/><path d="M429 374h22m-11-11v22" stroke="#C5F276" stroke-width="2"/>
-          <circle cx="145" cy="354" r="19" fill="#193A50" stroke="#8EA8A9"/><path d="M137 350h16m-16 8h11" stroke="#C5F276" stroke-width="2"/>
-          <circle cx="255" cy="103" r="14" fill="#C5F276"/><circle cx="341" cy="392" r="12" fill="#77B7A4"/><circle cx="415" cy="216" r="5" fill="#C5F276"/><circle cx="177" cy="256" r="4" fill="#C5F276"/>
-          <text x="218" y="349" fill="#93AAB0" font-size="10" letter-spacing="2" font-family="monospace">CONNECTED BY DESIGN</text>
-        </svg>
-        <div class="art-caption"><span>FROM NETWORKS</span><span class="caption-line"></span><span>TO CLOUD NATIVE</span></div>
-        <div class="art-index">ME / 2025</div>
-      </div>
-      <a href="#about" class="scroll-cue"><span class="scroll-line"></span> SCROLL TO EXPLORE</a>
-    </section>
-    <section class="intro section-wrap" id="about">
-      <div class="section-label"><span>01</span> / ABOUT</div>
-      <div class="intro-body"><p class="statement">I connect the <span>infrastructure beneath</span> a system to the experience people depend on.</p><div class="intro-bottom"><p>With a foundation in telecommunications engineering and more than 13 years in software, I bring a systems-level view to backend architecture. From secure banking platforms to real-time telecom services, I turn challenging requirements into clear, resilient technology.</p><a class="arrow-link" href="#contact">A little more about me <span>↗</span></a></div></div>
-    </section>
-    <section class="experience section-wrap" id="work">
-      <div class="section-heading"><div class="section-label"><span>02</span> / EXPERIENCE</div><p>Selected chapters<br>in a systems career.</p></div>
-      <div class="timeline">
-        <article class="role"><div class="role-date">AUG — DEC 2025</div><div class="role-main"><div class="role-title"><h3>Backend Architect & Senior Python Developer</h3><span>SOFTWORLD / SANTANDER</span></div><p>Designed an auditable banking data platform, from secure source ingestion and Snowflake modeling to operational dashboards and event-driven file intake.</p><div class="chips"><span>PYTHON</span><span>SNOWFLAKE</span><span>AZURE</span><span>REACT</span></div></div><span class="role-arrow">↗</span></article>
-        <article class="role"><div class="role-date">FEB — AUG 2025</div><div class="role-main"><div class="role-title"><h3>Backend Architect & Senior Python Engineer</h3><span>INSIGHT GLOBAL / T-MOBILE</span></div><p>Architected high-volume chatbot services and GraphQL APIs, with real-time conversation flows, observability, and streamlined CI/CD.</p><div class="chips"><span>FASTAPI</span><span>GRAPHQL</span><span>AWS</span><span>WEBSOCKETS</span></div></div><span class="role-arrow">↗</span></article>
-        <article class="role"><div class="role-date">JUL 2024 — JAN 2025</div><div class="role-main"><div class="role-title"><h3>Solutions Architect & Senior Python Developer</h3><span>ACCENTURE / BRIGHT HORIZONS</span></div><p>Built cloud-native learning platforms and data pipelines supporting personalized experiences, recommendations, and thousands of concurrent learners.</p><div class="chips"><span>GCP</span><span>AZURE</span><span>PYSPARK</span><span>REACT</span></div></div><span class="role-arrow">↗</span></article>
-        <article class="role"><div class="role-date">MAR 2023 — APR 2024</div><div class="role-main"><div class="role-title"><h3>Platform Architect & Senior Python Engineer</h3><span>EXPERIS / VERIZON</span></div><p>Designed real-time telecom telemetry and geospatial analytics systems, connecting network engineering context with cloud microservices.</p><div class="chips"><span>FASTAPI</span><span>POSTGIS</span><span>AWS</span><span>GEOSPATIAL</span></div></div><span class="role-arrow">↗</span></article>
-        <article class="role"><div class="role-date">OCT 2021 — DEC 2022</div><div class="role-main"><div class="role-title"><h3>Backend Architect & Senior Python Developer</h3><span>MOLINA HEALTHCARE</span></div><p>Architected secure healthcare APIs, data pipelines, and clinical dashboards with interoperability and HIPAA requirements at the core.</p><div class="chips"><span>DJANGO</span><span>FHIR</span><span>AZURE</span><span>HEALTHCARE</span></div></div><span class="role-arrow">↗</span></article>
-        <article class="role"><div class="role-date">JUL 2014 — OCT 2021</div><div class="role-main"><div class="role-title"><h3>Lead Backend Architect & Principal Python Engineer</h3><span>BANQUE MISR</span></div><p>Led core banking architecture, secure API design, financial data pipelines, and engineering standards across customer-facing systems.</p><div class="chips"><span>CORE BANKING</span><span>PYTHON</span><span>AZURE</span><span>PCI DSS</span></div></div><span class="role-arrow">↗</span></article>
-        <article class="role"><div class="role-date">OCT 2012 — MAY 2014</div><div class="role-main"><div class="role-title"><h3>Network Engineer</h3><span>VODAFONE EGYPT</span></div><p>Supported mobile network rollouts and performance operations, developing the telecom foundation that still informs my architecture work.</p><div class="chips"><span>TELECOM</span><span>2G / 3G / LTE</span><span>NETWORK OPS</span></div></div><span class="role-arrow">↗</span></article>
+      <div class="term" role="img" aria-label="Code window describing Mohamed as a Python class: Senior Python Engineer at iPacket, 13 years, Django, FastAPI, Celery, PostgreSQL, Redis, Elasticsearch, on AWS, Azure and GCP, open to remote work.">
+        <div class="term-bar"><i></i><i></i><i></i><span>engineer.py</span></div>
+<pre aria-hidden="true"><span class="k">class</span> <span class="c">Engineer</span>:
+    name     = <span class="s">"Mohamed Ellakany"</span>
+    role     = <span class="s">"Senior Python Engineer"</span>
+    company  = <span class="s">"iPacket"</span>  <span class="m"># current</span>
+    years    = <span class="n">13</span>
+    stack    = [<span class="s">"Django"</span>, <span class="s">"FastAPI"</span>, <span class="s">"Celery"</span>,
+                <span class="s">"PostgreSQL"</span>, <span class="s">"Redis"</span>, <span class="s">"Elasticsearch"</span>]
+    clouds   = (<span class="s">"AWS"</span>, <span class="s">"Azure"</span>, <span class="s">"GCP"</span>)
+    remote   = <span class="k">True</span>
+
+    <span class="k">def</span> <span class="f">hire</span>(self):
+        <span class="k">return</span> <span class="s">"mohamed.ellaqany@gmail.com"</span></pre>
       </div>
     </section>
-    <section class="expertise section-wrap" id="expertise">
-      <div class="section-heading"><div class="section-label"><span>03</span> / EXPERTISE</div><p>The toolkit for<br>building what lasts.</p></div>
-      <div class="expertise-grid">
-        <article><span class="expertise-no">01</span><h3>Backend & APIs</h3><p>Clear interfaces, secure services, and maintainable application foundations.</p><div class="chips"><span>PYTHON</span><span>FASTAPI</span><span>DJANGO</span><span>GO</span><span>GRAPHQL</span></div></article>
-        <article><span class="expertise-no">02</span><h3>Cloud & platform</h3><p>Reliable infrastructure and delivery pipelines built for real-world scale.</p><div class="chips"><span>AWS</span><span>AZURE</span><span>GCP</span><span>KUBERNETES</span><span>TERRAFORM</span></div></article>
-        <article><span class="expertise-no">03</span><h3>Data & intelligence</h3><p>Production-ready data flows for analytics, reporting, and machine learning.</p><div class="chips"><span>SNOWFLAKE</span><span>PYSPARK</span><span>POSTGRESQL</span><span>MLFLOW</span></div></article>
-        <article><span class="expertise-no">04</span><h3>Systems thinking</h3><p>Architecture shaped by security, operations, domain needs, and people.</p><div class="chips"><span>EVENT-DRIVEN</span><span>DDD</span><span>TELECOM</span><span>HEALTHCARE</span></div></article>
+    <div class="stack-strip chips" aria-label="Core technologies"><span class="on">python</span><span class="on">django</span><span class="on">fastapi</span><span>celery</span><span>postgresql</span><span>mysql</span><span>redis</span><span>elasticsearch</span><span>aws</span><span>azure</span><span>gcp</span><span>docker</span><span>kubernetes</span></div>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="prompt">$ <span class="cmd">cat about.md</span></div>
+      <h2 class="section-title">About</h2>
+      <div class="about-grid">
+        <div>
+          <p>I’m a Senior Python Engineer with 13+ years building backend platforms that teams can rely on: Django and FastAPI services, distributed data pipelines, and APIs on AWS, Azure, and GCP with Kubernetes.</p>
+          <p>Before software, I was a telecommunications network engineer. That background gives me a systems-level view, from network infrastructure up to the application layer, and it shows in how I design for reliability, observability, and scale. I’ve shipped mission-critical work in banking, healthcare, telecom, education, and now automotive, and I enjoy setting engineering standards and mentoring the people around me.</p>
+        </div>
+        <div class="stats">
+          <div class="stat"><b>13<span class="unit">+</span></b><span>years experience</span></div>
+          <div class="stat"><b>8</b><span>companies</span></div>
+          <div class="stat"><b>5</b><span>industries</span></div>
+          <div class="stat"><b>3</b><span>clouds: aws · azure · gcp</span></div>
+        </div>
       </div>
     </section>
-    <section class="education section-wrap"><div class="section-label"><span>04</span> / EDUCATION</div><div class="education-items"><div><span>2021</span><h3>Master of Computer Science</h3><p>Pacific States University · Los Angeles, CA</p></div><div><span>2011</span><h3>B.Sc. Telecommunications & Electronics Engineering</h3><p>MISR Higher Academy for Engineering and Technology · Egypt</p></div></div></section>
-    <section class="contact section-wrap" id="contact"><div class="contact-top"><div class="section-label"><span>05</span> / NEXT STEPS</div><span class="contact-note">GOOD SYSTEMS START WITH A CONVERSATION.</span></div><h2>Have a complex<br>problem to <em>solve?</em></h2><a class="contact-email" href="mailto:mohamed.ellaqany@gmail.com">Let’s talk <span>↗</span></a><div class="contact-links"><a href="mailto:mohamed.ellaqany@gmail.com">EMAIL <span>↗</span></a><a href="https://www.linkedin.com/in/mohamed-ellakany" target="_blank" rel="noreferrer">LINKEDIN <span>↗</span></a><a href="assets/Mohamed-Ellakany-Resume.docx" download>RÉSUMÉ <span>↓</span></a></div></section>
+
+    <!-- SELECTED WORK -->
+    <section id="work">
+      <div class="prompt">$ <span class="cmd">ls projects/</span></div>
+      <h2 class="section-title">Selected work</h2>
+      <p class="section-sub">A closer look at a few systems I’ve built: the problem, the approach, and the result.</p>
+      <div class="projects">
+        <article class="project">
+          <div class="term-bar"><i></i><i></i><i></i><span>plugin_rollout.py</span></div>
+          <div class="project-body">
+            <span class="org">@ iPacket · 2026</span>
+            <h3>Per-domain rollout platform for a dealer website plugin</h3>
+            <dl>
+              <div><dt>problem</dt><dd>Ship a new version of a plugin embedded on many dealer websites without a risky all-at-once release.</dd></div>
+              <div><dt>approach</dt><dd>A new Django service with a public bundle-lookup endpoint, Redis caching with signal-driven invalidation, per-IP rate limiting, a circuit breaker, and a per-domain kill switch.</dd></div>
+              <div><dt>result</dt><dd>Domain-by-domain rollout with instant rollback, and no database reads added to the hot path.</dd></div>
+            </dl>
+            <div class="chips"><span>django</span><span>redis</span><span>rate-limiting</span><span>pytest</span></div>
+          </div>
+        </article>
+        <article class="project">
+          <div class="term-bar"><i></i><i></i><i></i><span>time_to_frontline.py</span></div>
+          <div class="project-body">
+            <span class="org">@ iPacket · 2026</span>
+            <h3>“Time to Frontline” vehicle readiness tracking</h3>
+            <dl>
+              <div><dt>problem</dt><dd>Dealers had no reliable way to measure how quickly vehicles became fully photographed and ready to sell.</dd></div>
+              <div><dt>approach</dt><dd>Immutable, idempotent completion records inside the Celery image pipeline, a safe batched backfill, Elasticsearch sync, and data-driven per-store thresholds.</dd></div>
+              <div><dt>result</dt><dd>New “Photos Completed” and “Pending Photos” search filters and sorting, with full inventory coverage on launch day.</dd></div>
+            </dl>
+            <div class="chips"><span>celery</span><span>elasticsearch</span><span>mysql</span><span>data-analysis</span></div>
+          </div>
+        </article>
+        <article class="project">
+          <div class="term-bar"><i></i><i></i><i></i><span>network_telemetry.py</span></div>
+          <div class="project-body">
+            <span class="org">@ Verizon · 2023–2024</span>
+            <h3>Real-time network telemetry and anomaly detection</h3>
+            <dl>
+              <div><dt>problem</dt><dd>Network degradation (call drops, latency spikes, handover failures) was found after customers felt it.</dd></div>
+              <div><dt>approach</dt><dd>High-throughput FastAPI microservices, event-driven ingestion on SNS/SQS and Lambda, PostGIS geospatial analytics, and KPI-based anomaly detection.</dd></div>
+              <div><dt>result</dt><dd>Proactive detection and root-cause analysis of network issues, with faster geospatial queries through better indexing.</dd></div>
+            </dl>
+            <div class="chips"><span>fastapi</span><span>aws</span><span>postgis</span><span>event-driven</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="prompt">$ <span class="cmd">git log --career</span></div>
+      <h2 class="section-title">Experience</h2>
+      <p class="section-sub">13+ years building mission-critical systems at scale.</p>
+      <div class="log">
+
+        <article class="commit head">
+          <span class="node" aria-hidden="true"></span>
+          <div>
+            <div class="commit-head"><h3>Senior Software Engineer<small>@ iPacket</small><span class="ref">HEAD · current</span></h3><time>May 2026 – Present</time></div>
+            <div class="meta">Williamstown, WV · Remote · Full-time</div>
+            <p class="msg">Building the Digital Vehicle Presentation API, a large-scale Django platform for vehicle merchandising, search, and dealer tooling across a nationwide vehicle inventory.</p>
+            <ul>
+              <li>Designed and shipped a web-plugin service with a public bundle-lookup endpoint enabling per-domain rollout and instant rollback, with Redis-backed caching, signal-driven invalidation, per-IP rate limiting, and a circuit breaker on domain auto-registration.</li>
+              <li>Built “Time to Frontline” recon tracking: an immutable, insert-once completion table recorded idempotently inside the Celery image-processing chain, designed so failures never abort the chain or hold store-level Redis locks.</li>
+              <li>Retired the legacy vehicle Elasticsearch index and its Celery sync tasks after confirming zero traffic, removing ~1,100 lines of code and an hourly query against the primary database.</li>
+            </ul>
+            <details><summary></summary><ul>
+              <li>Extended the plugin platform with a per-domain kill switch, cache-guarded “last seen” tracking that adds no database reads to the hot path, and a read-only cleanup report classifying auto-registered domains for safe removal.</li>
+              <li>Delivered “Photos Completed” and “Pending Photos” search facets plus photo-completion sorting, backed by a batched, dry-run-by-default backfill and CDC-driven Elasticsearch sync for full inventory coverage at launch.</li>
+              <li>Replaced a hard-coded global photo threshold with data-driven per-store thresholds (store median with fallback and manual override), including retroactive reconciliation, Elasticsearch re-sync, and a distribution-analysis command to inform the decision.</li>
+              <li>Instrumented store lifecycle KPI metrics with OpenTelemetry and added a store opt-in to auto-publish AI-generated seller notes without ever demoting user-published content.</li>
+              <li>Shipped every change with thorough pytest coverage and backward-compatible migrations, deploying through Docker and Kubernetes environment overlays.</li>
+            </ul></details>
+            <div class="chips"><span>python</span><span>django-ninja</span><span>mysql</span><span>elasticsearch</span><span>redis</span><span>celery</span></div>
+          </div>
+        </article>
+
+        <article class="commit">
+          <span class="node" aria-hidden="true"></span>
+          <div>
+            <div class="commit-head"><h3>Senior Python Developer<small>@ Softworld / Santander Bank US</small></h3><time>Aug 2025 – Dec 2025</time></div>
+            <div class="meta">Boston, MA · Remote</div>
+            <p class="msg">Built an auditable banking data platform, from secure source ingestion and Snowflake modeling to operational dashboards and event-driven file intake.</p>
+            <ul>
+              <li>Built an end-to-end Python ETL platform ingesting data from multiple banking source systems with a multi-layer architecture (Source → Staging → Final), schema validations, and full auditability.</li>
+              <li>Designed Snowflake schemas, tables, and views optimized for high-performance analytical querying and executive reporting.</li>
+              <li>Built React dashboards surfacing pipeline metrics, data quality KPIs, and transformation results, with PostgreSQL as the reporting store.</li>
+            </ul>
+            <details><summary></summary><ul>
+              <li>Developed Python ingestion frameworks for secure file extraction, schema validation, business rule enforcement, and format normalization.</li>
+              <li>Built a Django-based administration layer to manage pipeline configurations, schedule ingestion jobs, and expose internal audit dashboards.</li>
+              <li>Integrated Azure Blob Storage and Azure Service Bus for reliable file intake and event-driven pipeline triggering.</li>
+              <li>Automated secure data file transfers via WinSCP, including orchestration and transfer status monitoring.</li>
+              <li>Authored complex SQL transformations and Snowflake stored procedures populating fact/dimension tables for enterprise BI.</li>
+              <li>Validated data integrity against DDR documents and Excel mapping sheets.</li>
+              <li>Optimized React performance through code splitting and lazy loading for large-volume financial datasets.</li>
+            </ul></details>
+            <div class="chips"><span>python</span><span>snowflake</span><span>django</span><span>azure</span><span>react</span></div>
+          </div>
+        </article>
+
+        <article class="commit">
+          <span class="node" aria-hidden="true"></span>
+          <div>
+            <div class="commit-head"><h3>Senior Python Engineer<small>@ Insight Global / T-Mobile</small></h3><time>Feb 2025 – Aug 2025</time></div>
+            <div class="meta">Seattle, WA · Remote</div>
+            <p class="msg">Built high-volume chatbot services and GraphQL APIs with real-time conversation flows, observability, and streamlined CI/CD.</p>
+            <ul>
+              <li>Developed a scalable, high-volume telecom self-service chatbot platform on FastAPI and GraphQL services processing millions of customer interactions.</li>
+              <li>Drove GraphQL schema design, resolvers, and mutations, reducing frontend data over-fetching by an estimated 40%.</li>
+              <li>Built CI/CD pipelines via GitHub Actions and Azure DevOps, cutting deployment cycle time from hours to under 10 minutes.</li>
+            </ul>
+            <details><summary></summary><ul>
+              <li>Built a Django admin portal to manage chatbot configurations, knowledge base entries, and routing rules, backed by PostgreSQL.</li>
+              <li>Configured AWS API Gateway with rate limiting and throttling; extended observability to Azure Monitor for cross-cloud telemetry.</li>
+              <li>Designed React admin dashboards with real-time visibility into conversation analytics, sessions, and system performance.</li>
+              <li>Created reusable React component libraries for chat interfaces, message threading, and notifications.</li>
+              <li>Implemented Redux state management for complex multi-turn conversation flows.</li>
+              <li>Implemented WebSocket connections for real-time chat updates, reducing perceived latency.</li>
+              <li>Wrote comprehensive pytest unit and integration suites across all critical chatbot service paths.</li>
+            </ul></details>
+            <div class="chips"><span>fastapi</span><span>graphql</span><span>aws</span><span>websockets</span></div>
+          </div>
+        </article>
+
+        <article class="commit">
+          <span class="node" aria-hidden="true"></span>
+          <div>
+            <div class="commit-head"><h3>Senior Python Developer<small>@ Accenture / Bright Horizons</small></h3><time>Jul 2024 – Jan 2025</time></div>
+            <div class="meta">Boston, MA · Remote</div>
+            <p class="msg">Built cloud-native learning platforms and data pipelines supporting personalized experiences, recommendations, and thousands of concurrent learners.</p>
+            <ul>
+              <li>Developed cloud-native educational platforms with Python, FastAPI, and Django supporting thousands of concurrent learners.</li>
+              <li>Built real-time recommendation services on AWS ECS and GCP Cloud Run, increasing student engagement and content relevance.</li>
+              <li>Created modular React component libraries for learning modules and quizzes, improving course completion rates by 25%.</li>
+            </ul>
+            <details><summary></summary><ul>
+              <li>Designed PostgreSQL schemas and query optimizations for learner progress, content metadata, and recommendations.</li>
+              <li>Built and deployed Django REST services on Azure App Service and AKS to scale during peak enrollment.</li>
+              <li>Designed React learning dashboards with live progress and engagement metrics via WebSockets.</li>
+              <li>Integrated Chart.js and D3.js with React for interactive visualizations of learning patterns and adaptive paths.</li>
+              <li>Engineered PySpark and Pandas pipelines processing millions of learning events daily.</li>
+              <li>Deployed containerized microservices on GKE and EKS for elastic horizontal scaling without downtime.</li>
+              <li>Led platform performance reviews that significantly reduced API response times on core student endpoints.</li>
+            </ul></details>
+            <div class="chips"><span>fastapi</span><span>django</span><span>gcp</span><span>azure</span><span>pyspark</span></div>
+          </div>
+        </article>
+
+        <article class="commit">
+          <span class="node" aria-hidden="true"></span>
+          <div>
+            <div class="commit-head"><h3>Senior Python Engineer<small>@ Experis / Verizon</small></h3><time>Mar 2023 – Apr 2024</time></div>
+            <div class="meta">Irving, TX · Remote</div>
+            <p class="msg">Engineered real-time telecom telemetry and geospatial analytics systems, connecting network engineering context with cloud microservices.</p>
+            <ul>
+              <li>Engineered a high-throughput FastAPI microservices platform processing real-time telecom network telemetry (call drops, latency spikes, handover failures) at scale.</li>
+              <li>Designed geospatial analytics frameworks using GeoPandas, Shapely, and PostGIS, reducing query execution time through advanced indexing.</li>
+              <li>Leveraged formal Telecom Engineering background to design KPI modeling and anomaly detection for proactive root-cause analysis.</li>
+            </ul>
+            <details><summary></summary><ul>
+              <li>Built Django operator portals for alert thresholds, incident workflows, and KPI dashboards on Amazon RDS PostgreSQL.</li>
+              <li>Built event-driven pipelines using AWS SNS/SQS and Lambda to ingest and enrich streaming network events.</li>
+              <li>Integrated Azure Data Factory and Blob Storage for cross-cloud archival and regulatory reporting.</li>
+              <li>Designed React network operations dashboards with geospatial coverage maps and WebSocket metrics.</li>
+              <li>Created reusable React components for network health, alarms, and trend analysis using Chart.js and Recharts.</li>
+              <li>Deployed services on AWS ECS (Fargate) and EKS with auto-scaling policies.</li>
+              <li>Implemented CI/CD with GitHub Actions and AWS CodeBuild/CodePipeline.</li>
+            </ul></details>
+            <div class="chips"><span>fastapi</span><span>postgis</span><span>aws</span><span>geospatial</span></div>
+          </div>
+        </article>
+
+        <article class="commit">
+          <span class="node" aria-hidden="true"></span>
+          <div>
+            <div class="commit-head"><h3>Senior Python Developer<small>@ Molina Healthcare</small></h3><time>Oct 2021 – Dec 2022</time></div>
+            <div class="meta">Rockville, MD · Remote</div>
+            <p class="msg">Developed secure healthcare APIs, data pipelines, and clinical dashboards with interoperability and HIPAA requirements at the core.</p>
+            <ul>
+              <li>Developed HIPAA-compliant healthcare platforms with Python and Django for claims processing, EHR management, clinical analytics, and care coordination.</li>
+              <li>Leveraged Azure Health Data Services (FHIR API) and Azure Service Bus for secure interoperability between providers, labs, and insurers.</li>
+              <li>Built React clinical dashboards with real-time patient data and role-based access controls.</li>
+            </ul>
+            <details><summary></summary><ul>
+              <li>Designed PostgreSQL schemas and optimized queries for patient records, claims, and scheduling under strict HIPAA governance.</li>
+              <li>Implemented FastAPI and GraphQL services for patient data, scheduling, eligibility checks, and claims.</li>
+              <li>Engineered Pandas and PySpark ETL pipelines to normalize and validate EHR and claims data.</li>
+              <li>Developed interactive D3.js visualizations for population health trends and clinical outcomes.</li>
+              <li>Automated containerized deployments using Docker, Kubernetes, and GitHub Actions.</li>
+              <li>Defined and enforced HIPAA security architecture, partnering with compliance teams to pass security audits.</li>
+              <li>Authored unit and integration tests validating API behavior and regulatory compliance workflows.</li>
+            </ul></details>
+            <div class="chips"><span>django</span><span>fastapi</span><span>fhir</span><span>azure</span><span>hipaa</span></div>
+          </div>
+        </article>
+
+        <article class="commit">
+          <span class="node" aria-hidden="true"></span>
+          <div>
+            <div class="commit-head"><h3>Principal Python Engineer<small>@ Banque Misr</small></h3><time>Jul 2014 – Oct 2021</time></div>
+            <div class="meta">Cairo, Egypt · 7 years</div>
+            <p class="msg">Led core banking development, secure API design, financial data pipelines, and engineering standards across customer-facing systems.</p>
+            <ul>
+              <li>Led end-to-end design and development of mission-critical core banking systems (Python, Django, FastAPI) at one of Egypt’s largest banks, covering onboarding, accounts, transactions, lending, and compliance.</li>
+              <li>Designed PostgreSQL and MySQL data models for transactional banking data across millions of accounts.</li>
+              <li>Established backend engineering standards, conducted design and code reviews, built CI/CD practices, and mentored a team of engineers.</li>
+            </ul>
+            <details><summary></summary><ul>
+              <li>Deployed Django REST APIs and Flask microservices on Azure App Service and AKS.</li>
+              <li>Built high-volume financial ETL pipelines using Pandas, PySpark, and AWS Glue for regulatory reporting and analytics.</li>
+              <li>Implemented OAuth2 and RBAC frameworks aligned with PCI DSS and banking security standards.</li>
+              <li>Developed React online banking portals for account management, transaction history, and financial insights.</li>
+              <li>Built internal React dashboards for tellers and customer service representatives.</li>
+              <li>Optimized React bundle sizes via code splitting and lazy loading for mobile-network customers.</li>
+              <li>Produced comprehensive technical documentation for architectures, APIs, data flows, and operations.</li>
+            </ul></details>
+            <div class="chips"><span>python</span><span>django</span><span>core-banking</span><span>pci-dss</span><span>azure</span></div>
+          </div>
+        </article>
+
+        <article class="commit">
+          <span class="node" aria-hidden="true"></span>
+          <div>
+            <div class="commit-head"><h3>Network Engineer<small>@ Vodafone Egypt</small></h3><time>Oct 2012 – May 2014</time></div>
+            <div class="meta">Cairo, Egypt</div>
+            <p class="msg">Supported mobile network rollouts and performance operations, building the telecom foundation that still informs my engineering work.</p>
+            <ul>
+              <li>Managed telecom network infrastructure across 2G/3G/LTE rollouts, covering routing, switching, and radio transmission for high availability.</li>
+              <li>Performed continuous network monitoring, troubleshooting, and optimization to minimize downtime and maximize throughput.</li>
+              <li>Led cross-functional teams of engineers and technicians, meeting SLA commitments and delivery timelines.</li>
+              <li>Collaborated with Ericsson/Huawei on optimization campaigns improving call drop rate, handover success, and throughput.</li>
+            </ul>
+            <div class="chips"><span>telecom</span><span>2g/3g/lte</span><span>network-ops</span></div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="prompt">$ <span class="cmd">pip list --skills</span></div>
+      <h2 class="section-title">Skills</h2>
+      <p class="section-sub">Highlighted packages are the tools I use most.</p>
+      <div class="skills">
+        <div class="skill"><h3>languages</h3><div class="chips"><span class="on">python</span><span class="on">sql</span><span>go</span><span>javascript</span><span>typescript</span><span>c++</span></div></div>
+        <div class="skill"><h3>backend &amp; apis</h3><div class="chips"><span class="on">django</span><span class="on">fastapi</span><span>django-ninja</span><span>flask</span><span class="on">celery</span><span>graphql</span><span>react</span><span>next.js</span><span>node.js</span></div></div>
+        <div class="skill"><h3>data &amp; search</h3><div class="chips"><span class="on">postgresql</span><span class="on">mysql</span><span class="on">elasticsearch</span><span class="on">redis</span><span>postgis</span><span>snowflake</span><span>mongodb</span><span>dynamodb</span><span>neo4j</span></div></div>
+        <div class="skill"><h3>cloud</h3><div class="chips"><span class="on">aws</span><span>ecs/eks</span><span>lambda</span><span>sqs</span><span class="on">azure</span><span>aks</span><span>service-bus</span><span class="on">gcp</span><span>cloud-run</span><span>bigquery</span></div></div>
+        <div class="skill"><h3>devops &amp; observability</h3><div class="chips"><span class="on">docker</span><span class="on">kubernetes</span><span>terraform</span><span>ansible</span><span class="on">github-actions</span><span>azure-devops</span><span>jenkins</span><span>opentelemetry</span><span>cloudwatch</span></div></div>
+        <div class="skill"><h3>data engineering &amp; ml</h3><div class="chips"><span class="on">pandas</span><span>pyspark</span><span>etl/elt</span><span>numpy</span><span>scikit-learn</span><span>tensorflow</span><span>mlflow</span></div></div>
+        <div class="skill"><h3>architecture</h3><div class="chips"><span class="on">microservices</span><span>event-driven</span><span>ddd</span><span>api-gateway</span><span>cqrs</span><span>saga</span></div></div>
+        <div class="skill"><h3>testing &amp; quality</h3><div class="chips"><span class="on">pytest</span><span>ruff</span><span>jest</span><span>react-testing-library</span><span>eslint</span></div></div>
+        <div class="skill"><h3>telecom &amp; gis</h3><div class="chips"><span>2g/3g/lte</span><span>geopandas</span><span>shapely</span><span>arcgis</span><span>mapbox-gl</span></div></div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <div class="prompt">$ <span class="cmd">cat education.txt</span></div>
+      <h2 class="section-title">Education</h2>
+      <div class="edu">
+        <div><span class="yr">2021</span><h3>Master of Computer Science</h3><p>Pacific States University · Los Angeles, CA</p></div>
+        <div><span class="yr">2011</span><h3>B.Sc. Telecommunications &amp; Electronics Engineering</h3><p>MISR Higher Academy for Engineering and Technology · Egypt</p></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <div class="prompt">$ <span class="cmd">contact --hire</span></div>
+      <div class="contact-grid">
+        <div>
+          <h2>Let’s build something<br><span class="py">reliable together.</span></h2>
+          <p>I’m open to remote Senior Python Engineer roles. If your team is building scalable Python and Django platforms, APIs, or data pipelines, I’d love to hear from you.</p>
+          <div class="btns" style="display:flex;gap:12px;flex-wrap:wrap">
+            <a class="btn primary" href="mailto:mohamed.ellaqany@gmail.com">$ send email</a>
+            <a class="btn" href="assets/Mohamed_Ellakany_Resume_2026.docx" download>$ download resume</a>
+          </div>
+          <div class="meta">U.S. Permanent Resident · Based in Anaheim, CA · Remote only</div>
+        </div>
+        <div class="term">
+          <div class="term-bar"><i></i><i></i><i></i><span>contact.py</span></div>
+<pre>contact = {
+    <span class="s">"email"</span>:    <a href="mailto:mohamed.ellaqany@gmail.com">"mohamed.ellaqany@gmail.com"</a>,
+    <span class="s">"linkedin"</span>: <a href="https://www.linkedin.com/in/mohamed-ellakany" target="_blank" rel="noopener">"linkedin.com/in/mohamed-ellakany"</a>,
+    <span class="s">"resume"</span>:   <a href="assets/Mohamed_Ellakany_Resume_2026.docx" download>"Mohamed_Ellakany_Resume.docx"</a>,
+    <span class="s">"remote"</span>:   <span class="k">True</span>,
+}</pre>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="site-footer"><a class="wordmark" href="#home"><span class="mark">ME</span><span>Mohamed Ellakany</span></a><span>DESIGNED WITH INTENTION · <span id="year">2026</span></span><a href="#home">BACK TO TOP ↑</a></footer>
+
+  <footer class="footer">
+    <div class="wrap"><span>© <span id="year">2026</span> Mohamed Ellakany</span><span>built with html, css &amp; a little js</span><a href="#top">$ cd ~/top ↑</a></div>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>
