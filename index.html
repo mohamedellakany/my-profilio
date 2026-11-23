@@ -105,19 +105,6 @@
           </div>
         </article>
         <article class="project">
-          <div class="term-bar"><i></i><i></i><i></i><span>time_to_frontline.py</span></div>
-          <div class="project-body">
-            <span class="org">@ iPacket · 2026</span>
-            <h3>“Time to Frontline” vehicle readiness tracking</h3>
-            <dl>
-              <div><dt>problem</dt><dd>Dealers had no reliable way to measure how quickly vehicles became fully photographed and ready to sell.</dd></div>
-              <div><dt>approach</dt><dd>Immutable, idempotent completion records inside the Celery image pipeline, a safe batched backfill, Elasticsearch sync, and data-driven per-store thresholds.</dd></div>
-              <div><dt>result</dt><dd>New “Photos Completed” and “Pending Photos” search filters and sorting, with full inventory coverage on launch day.</dd></div>
-            </dl>
-            <div class="chips"><span>celery</span><span>elasticsearch</span><span>mysql</span><span>data-analysis</span></div>
-          </div>
-        </article>
-        <article class="project">
           <div class="term-bar"><i></i><i></i><i></i><span>network_telemetry.py</span></div>
           <div class="project-body">
             <span class="org">@ Verizon · 2023–2024</span>
@@ -128,6 +115,19 @@
               <div><dt>result</dt><dd>Proactive detection and root-cause analysis of network issues, with faster geospatial queries through better indexing.</dd></div>
             </dl>
             <div class="chips"><span>fastapi</span><span>aws</span><span>postgis</span><span>event-driven</span></div>
+          </div>
+        </article>
+        <article class="project">
+          <div class="term-bar"><i></i><i></i><i></i><span>core_banking.py</span></div>
+          <div class="project-body">
+            <span class="org">@ Banque Misr · 2014–2021</span>
+            <h3>Mission-critical core banking platform</h3>
+            <dl>
+              <div><dt>problem</dt><dd>One of Egypt’s largest banks needed onboarding, accounts, transactions, and lending to stay consistent, secure, and fully auditable across millions of accounts.</dd></div>
+              <div><dt>approach</dt><dd>Django REST APIs and Flask microservices on Azure Kubernetes Service, transactional PostgreSQL/MySQL models built for auditability, OAuth2 and RBAC aligned with PCI DSS, and PySpark/AWS Glue pipelines for regulatory reporting.</dd></div>
+              <div><dt>result</dt><dd>Scalable, cloud-native core banking with secured APIs and compliance reporting, backed by engineering standards and a team I mentored.</dd></div>
+            </dl>
+            <div class="chips"><span>django</span><span>postgresql</span><span>pci-dss</span><span>kubernetes</span></div>
           </div>
         </article>
       </div>
